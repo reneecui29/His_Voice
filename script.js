@@ -38,7 +38,7 @@ const data = [
       } 
       else {
           document.querySelector(".js-quote-section").innerText=data[a].quote;
-          document.querySelector(".share-text").innerText=data[a].quote;
+          document.querySelector(".share-text").innerHTML=`${data[a].quote}   [${data[a].verse}]`;
           document.querySelector(".js-detail-section").innerHTML=`
               <div>${data[a].verse}</div> <section>${data[a].desc}</section> <a href="${data[a].link}">More Info</a>`;
           currentnumber = a 
@@ -54,14 +54,12 @@ const data = [
       document.querySelector(".button2").classList.toggle("dis-n");
       document.querySelector(".button3").classList.toggle("dis-n");
       document.querySelector(".button4").classList.toggle("dis-n");
-      document.querySelector(".button5").classList.toggle("dis-n");
   }
   function toggleShare(){
       document.querySelector(".js-share-section").classList.toggle("dis-n");
       document.querySelector(".js-quote-section").classList.toggle("dis-n");
       document.querySelector(".button1").classList.toggle("dis-n");
       document.querySelector(".button2").classList.toggle("dis-n");
-      document.querySelector(".button3").classList.toggle("dis-n");
       document.querySelector(".button4").classList.toggle("dis-n");
       document.querySelector(".button5").classList.toggle("dis-n");
   }
