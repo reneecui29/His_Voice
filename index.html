@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His Voice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header"> 
+    <img src="./img/main-icon.svg" class="logo">His Voice <img src="./img/main-icon.svg" class="logo1">
+    </header>
+    <br>
+    <br>
+    <main class="quote-section">
+     <section class="js-quote-section">
+         
+     </section>
+     <section class="js-detail-section dis-n">
+         
+     </section>
+
+     <section class="js-share-section dis-n">
+         Share this passage:
+       <textarea class="share-text">
+         
+       </textarea>
+     </section>
+     
+    </main>
+
+    <footer class="footer">
+      <section class="button1">
+            <button onclick = "refreshQuote()" class="button">
+                    <img src="./img/quote-btn.svg" class="footer-btn-img">
+                    <img src="./img/jesus-svgrepo-com.svg" class="footer-btn-img">
+            </button>
+      </section>
+
+      <section class = "button2">
+            <button onclick = "toggleDetails()" class="button1">
+                    <img src="./img/details-btn.svg"class="footer-btn-img1">
+            </button>
+      </section>
+      
+      <section  class="button3 dis-n">
+            <button onclick = "toggleDetails()" class="button1">
+                    <img src="./img/back-btn.svg"class="footer-btn-img1">
+            </button>
+      </section>
+
+      <section class= "button4">
+            <button onclick= "toggleShare()" class = "button1">
+                    <img src="./img/share-btn.svg"class="footer-btn-img1">   
+            </button>
+      </section>
+
+      <section onclick= "copyShareText()"class= "button5 dis-n">
+            <button onclick= "toggleShare()" class = "button1">
+                    <img src="./img/copy-btn.svg"class="footer-btn-img1">   
+            </button>
+      </section>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>
